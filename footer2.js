@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
   $('input').keydown(function (e) {
   	if(((e.keyCode > 95 && e.keyCode < 106) || (e.keyCode > 47 && e.keyCode < 58) || e.keyCode == 8 || e.keyCode == 9 || e.keyCode == 188)) {
         $(this).removeClass('not-valid');
-        $(this).parent().parent().find('.error-message').text('Este campo nÃ£o pode ser vazio').hide();
+        $(this).parent().parent().find('.error-message').text('Este campo não pode ser vazio').hide();
   	}
   });
 
@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
     required.each(function(i) {
     	if ($(this).is(':visible') && $(this).val() === "") {
     		$(this).addClass('not-valid');
-    		$(this).parent().parent().find('.error-message').text('Este campo nÃ£o pode ser vazio').show();
+    		$(this).parent().parent().find('.error-message').text('Este campo não pode ser vazio').show();
     		formValid = false;
     	}
     });
